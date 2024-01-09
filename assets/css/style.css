@@ -2,20 +2,20 @@
 /********** General CSS ***********/
 /**********************************/
 body {
-    color: #666666;
-    background: #19376D;
+    color: #ffffff;
+    background: #1e1e1e;
     font-family: 'Open Sans', sans-serif;
 }
 
 a {
-    color: #222222;
+    color: #ffffff;
     transition: all .3s;
 }
 
 a:hover,
 a:active,
 a:focus {
-    color: #FF9209;
+    color: #F9D94A;
     outline: none;
     text-decoration: none;
 }
@@ -39,7 +39,9 @@ a:focus {
     position: relative;
     width: 100%;
     float: left;
-    background: #222222;
+    background: #3e3e3e;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .wrapper .content {
@@ -47,7 +49,7 @@ a:focus {
     width: 100%;
     padding: 15px;
     float: left;
-    background: #19376D;
+    background: #1e1e1e;
 }
 
 .wrapper .sidebar-header,
@@ -57,7 +59,7 @@ a:focus {
 
 .navbar {
     padding: 15px;
-    background: #222222 !important;
+    background: #3e3e3e !important;
 }
 
 .navbar-expand-md .navbar-nav .nav-item {
@@ -76,7 +78,7 @@ a:focus {
 }
 
 .navbar-expand-md .navbar-nav .nav-link i {
-    color: #FF9209;
+    color: #ffffff;
     float: right;
     padding-top: 5px;
     transition: all .3s;
@@ -84,12 +86,14 @@ a:focus {
 
 .navbar-expand-md .navbar-nav .nav-link:hover,
 .navbar-expand-md .navbar-nav .nav-link.active {
-    color: #FF9209;
+    background-color: #F9D94A;
+    color: #1e1e1e;
+    border-radius: 3px;
 }
 
 .navbar-expand-md .navbar-nav .nav-link:hover i,
 .navbar-expand-md .navbar-nav .nav-link.active i{
-    color: #ffffff;
+    color: #1e1e1e;
 }
 
 
@@ -112,7 +116,7 @@ a:focus {
         content: "";
         width: 100%;
         height: 30px;
-        background: #19376D;
+        background: #1e1e1e;
         z-index: 1;
     }
     
@@ -147,16 +151,23 @@ a:focus {
         float: right;
     }
     
-    .wrapper .sidebar:hover  .sidebar-header {
-        position: relative;
-        display: block;
-        width: 100%;
-    }
+.wrapper .sidebar .sidebar-header {
+    background-color: #3e3e3e;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    .wrapper .sidebar .sidebar-header img {
-        width: 100%;
-        height: auto;
-    }
+.wrapper .sidebar .sidebar-header img {
+    width: 70%;
+    height: auto;
+    border-radius: 50%;
+    margin: 20px;
+    border: 4px solid #F9D94A;
+}
+
     
     .navbar-brand {
         display: none;
@@ -196,7 +207,7 @@ a:focus {
         padding: 15px;
         font-size: 0;
         text-align: center;
-        background: #222222;
+        /* background: #3e3e3e; */
     }
     
     .sidebar .sidebar-footer a {
@@ -207,8 +218,8 @@ a:focus {
         margin: 0 15px 15px 0;
         text-align: center;
         font-size: 18px;
-        color: #222222;
-        background: #FF9209;
+        color: #ffffff;
+        border-radius: 50%;
     }
     
     .sidebar .sidebar-footer a:last-child {
@@ -216,8 +227,7 @@ a:focus {
     }
     
     .sidebar .sidebar-footer a:hover {
-        color: #FF9209;
-        background: #ffffff;
+        color: #F9D94A;
     }
     
     .sidebar:hover .sidebar-footer {
@@ -281,11 +291,11 @@ a:focus {
 }
 
 .back-to-top i {
-    color: #dbdbdb;
+    color: #3e3e3e;
 }
 
 .back-to-top i:hover {
-    color: #FF9209;
+    color: #F9D94A;
 }
 
 .back-to-top {
@@ -309,7 +319,7 @@ a:focus {
 /**********************************/
 .header {
     position: relative;
-    background: #ffffff;
+    background: transparent;
 }
 
 .header .content-inner {
@@ -319,14 +329,14 @@ a:focus {
 }
 
 .header p {
-    color: #FF9209;
+    color: #F9D94A;
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
 .header h1 {
-    color: #222222;
+    color: #ffffff;
     font-size: 50px;
     font-weight: 700;
 }
@@ -336,6 +346,7 @@ a:focus {
     margin: 0;
     height: 25px;
     font-size: 25px;
+    color: #F9D94A;
 }
 
 .header .typed-text {
@@ -345,27 +356,27 @@ a:focus {
 .header .typed-cursor {
     font-size: 25px;
     font-weight: 300;
-    color: #222222;
+    color: #ffffff;
 }
 
 .large-btn .content-inner {
     font-size: 0;
-    border-bottom: 30px solid #19376D;
+    border-bottom: 30px solid #1e1e1e;
 }
 
 .large-btn .btn {
     position: relative;
     width: 50%;
     padding: 15px 0;
-    color: #FF9209;
+    color: #1e1e1e;
     font-size: 20px;
-    background: #222222;
+    background: #ffffff;
     border-radius: 0;
 }
 
 .large-btn .btn:last-child {
-    color: #222222;
-    background: #FF9209;
+    color: #1e1e1e;
+    background: #F9D94A;
 }
 
 .large-btn .btn i {
@@ -399,7 +410,7 @@ a:focus {
 }
 
 .content-header h2 {
-    color: #222222;
+    color: #ffffff;
     font-size: 35px;
     font-weight: 700;
     letter-spacing: 3px;
@@ -414,7 +425,7 @@ a:focus {
     height: 3px;
     bottom: 0;
     left: 0;
-    background: #FF9209;
+    background: #F9D94A;
 }
 
 
@@ -424,8 +435,9 @@ a:focus {
 .about {
     position: relative;
     padding: 60px 30px;
-    background: #dbdbdb;
-    border-bottom: 30px solid #19376D;
+    background: #3e3e3e;
+    margin-bottom: 30px;
+    border-radius: 3px;
 }
 
 
@@ -442,14 +454,14 @@ a:focus {
 
 .about .btn {
     border-radius: 0;
-    color: #222222;
-    background: #FF9209;
+    color: #ffffff;
+    background: #F9D94A;
     transition: all .3s;
 }
 
 .about .btn:hover {
-    color: #FF9209;
-    background: #222222;
+    color: #F9D94A;
+    background: #ffffff;
 }
 
 .about .skills {
@@ -473,17 +485,62 @@ a:focus {
 
 .about .progress {
     height: 5px;
-    border: 1px solid #FF9209;
+    border: 1px solid #F9D94A;
     border-radius: 0;
     background: #ffffff;
 }
 
 .about .progress .progress-bar {
     width: 1px;
-    background: #FF9209;
+    background: #F9D94A;
     border-radius: 0;
     transition: 1s;
 }
+
+.skills {
+    position: relative;
+    padding: 60px 30px;
+    background: #3e3e3e;
+    margin-bottom: 30px;
+    border-radius: 3px;
+}
+.skills .icon-box img {
+    width: 70px;
+    max-height: 70px;
+    margin: 5px 20px; /* Adjust the padding value as needed */
+}
+
+.skills .progress {
+    height: 50px;
+    display: block;
+    background: none;
+  }
+  
+  .skills .progress .skill {
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+  }
+  
+  .skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+  }
+  
+  .skills .progress-bar-wrap {
+    background: rgba(255, 255, 255, 0.15);
+  }
+  
+  .skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: .9s;
+    background-color: #1c7d32;
+  }
 
 
 /**********************************/
@@ -492,16 +549,17 @@ a:focus {
 .education {
     position: relative;
     padding: 60px 30px;
-    background: #dbdbdb;
-    border-bottom: 30px solid #19376D;
+    background: #3e3e3e;
+    margin-bottom: 30px;
+    border-radius: 3px;
 }
 
 .education .edu-col {
     position: relative;
     width: 100%;
     padding: 20px 0 20px 20px;
-    border-left: 1px solid #FF9209;
-    border-bottom: 1px solid #FF9209;
+    border-left: 1px solid #F9D94A;
+    border-bottom: 1px solid #F9D94A;
 }
 
 .education .col-md-6:first-child .edu-col {
@@ -531,6 +589,7 @@ a:focus {
     font-size: 13px;
     letter-spacing: 1px;
     margin-bottom: 10px;
+    color: #aaaaaa;
 }
 
 .education .edu-col span::before {
@@ -538,20 +597,24 @@ a:focus {
     content: "";
     width: 11px;
     height: 11px;
-    background: #FF9209;
+    background: #F9D94A;
     top: 5px;
     left: -26px;
     border-radius: 5px;
 }
 
 .education .edu-col span i {
-    color: #FF9209;
+    color: #F9D94A;
 }
 
 .education .edu-col h3 {
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 2px;
+    background-color: #F9D94A;
+    border-radius: 10px;
+    padding-left: 10px;
+    color: #1e1e1e;
 }
 
 .education .edu-col p {
@@ -565,16 +628,17 @@ a:focus {
 .experience {
     position: relative;
     padding: 60px 30px;
-    background: #dbdbdb;
-    border-bottom: 30px solid #19376D;
+    background: #3e3e3e;
+    margin-bottom: 30px;
+    border-radius: 3px;
 }
 
 .experience .exp-col {
     position: relative;
     width: 100%;
     padding: 20px 0 20px 20px;
-    border-left: 1px solid #FF9209;
-    border-bottom: 1px solid #FF9209;
+    border-left: 1px solid #F9D94A;
+    border-bottom: 1px solid #F9D94A;
 }
 
 .experience .col-md-6:first-child .exp-col {
@@ -604,6 +668,7 @@ a:focus {
     font-size: 13px;
     letter-spacing: 1px;
     margin-bottom: 10px;
+    color: #aaaaaa;
 }
 
 .experience .exp-col span::before {
@@ -611,14 +676,14 @@ a:focus {
     content: "";
     width: 11px;
     height: 11px;
-    background: #FF9209;
+    background: #F9D94A;
     top: 5px;
     left: -26px;
     border-radius: 5px;
 }
 
 .experience .exp-col span i {
-    color: #FF9209;
+    color: #F9D94A;
 }
 
 .experience .exp-col h3 {
@@ -626,6 +691,10 @@ a:focus {
     font-weight: 700;
     letter-spacing: 2px;
     margin-bottom: 5px;
+    background-color: #F9D94A;
+    border-radius: 3px;
+    padding-left: 10px;
+    color: #1e1e1e;
 }
 
 .experience .exp-col h4 {
@@ -633,12 +702,14 @@ a:focus {
     font-weight: 400;
     font-style: italic;
     margin-bottom: 5px;
+    color: #aaaaaa;
 }
 
 .experience .exp-col h5 {
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 10px;
+    color: #F9D94A;
 }
 
 .experience .exp-col p {
@@ -652,8 +723,9 @@ a:focus {
 .portfolio {
     position: relative;
     padding: 60px 30px 30px 30px;
-    background: #dbdbdb;
-    border-bottom: 30px solid #19376D;
+    background: #3e3e3e;
+    margin-bottom: 30px;
+    border-radius: 3px;
 }
 
 .portfolio #portfolio-flters {
@@ -669,19 +741,20 @@ a:focus {
     display: inline-block;
     height: 35px;
     padding: 10px;
-    color: #666666;
+    color: #3e3e3e;
     font-size: 13px;
     line-height: 15px;
     text-transform: uppercase;
-    border: 1px solid #FF9209;
+    border: 1px solid #F9D94A;
     background: #ffffff;
     transition: all 0.3s ease-in-out;
+    border-radius: 2px;
 }
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-    background: #FF9209;
-    color: #222222;
+    background: #F9D94A;
+    color: #3e3e3e;
 }
 
 .portfolio .portfolio-item {
@@ -695,8 +768,9 @@ a:focus {
     overflow: hidden;
     height: 220px;
     position: relative;
-    border-radius: 0;
-    margin: 0; 
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 0;
 }
 
 .portfolio .portfolio-item figure img {
@@ -720,25 +794,27 @@ a:focus {
     text-align: center;
     width: 45px;
     height: 35px;
-    background: #FF9209;
+    background: #F9D94A;
     transition: 0.2s linear;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .portfolio .portfolio-item figure .link-preview i,
 .portfolio .portfolio-item figure .link-details i {
-    color: #222222;
+    color: #1e1e1e;
     padding-top: 10px;
     font-size: 16px;
 }
 
 .portfolio .portfolio-item figure .link-preview:hover,
 .portfolio .portfolio-item figure .link-details:hover {
-    background: #222222;
+    background: #1e1e1e;
 }
 
 .portfolio .portfolio-item figure .link-preview:hover i,
 .portfolio .portfolio-item figure .link-details:hover i {
-    color: #FF9209;
+    color: #F9D94A;
 }
 
 .portfolio .portfolio-item figure .link-preview {
@@ -759,11 +835,12 @@ a:focus {
     right: 0;
     top: 100%;
     padding: 30px 10px;
-    color: #222222;
+    color: #1e1e1e;
     font-size: 16px;
     font-weight: 600;
-    background: rgba(255, 111, 97, .5);
-    border-radius: 0;
+    background: #F9D94A;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 0;
 }
 
 .portfolio .portfolio-item figure .portfolio-title:hover {
@@ -802,7 +879,8 @@ a:focus {
 .contact {
     position: relative;
     padding: 60px 30px 30px 30px;
-    background: #dbdbdb;
+    background: #3e3e3e;
+    border-radius: 3px;
 }
 
 .contact .contact-info {
@@ -820,15 +898,15 @@ a:focus {
 
 .contact .contact-info p i {
     width: 25px;
-    color: #FF9209;
+    color: #F9D94A;
 }
 
 .contact .contact-info p a {
-    color: #666666;
+    color: #ffffff;
 }
 
 .contact .contact-info p a:hover {
-    color: #FF9209;
+    color: #F9D94A;
     text-decoration: none;
 }
 
@@ -840,8 +918,7 @@ a:focus {
     width: 35px;
     height: 35px;
     padding: 5px 0;
-    color: #222222;
-    background: #FF9209;
+    color: #F9D94A;
     border-radius: 0;
     margin-top: 15px;
     margin-right: 15px;
@@ -853,8 +930,8 @@ a:focus {
 }
 
 .contact .social a:hover {
-    color: #FF9209;
-    background: #222222;
+    color: #fff;
+    width: 40px;
 }
 
 .contact .form {
@@ -864,24 +941,24 @@ a:focus {
 }
 
 .contact .form .form-control {
-    border-radius: 0;
+    border-radius: 3px;
 }
 
 .contact .form .form-control:focus {
     box-shadow: none;
-    border-color: #FF9209;
+    border-color: #F9D94A;
 }
 
 .contact .form .btn {
-    color: #222222;
-    background: #FF9209;
-    border-radius: 0;
+    color: #1e1e1e;
+    background: #F9D94A;
+    border-radius: 3px;
     transition: all .3s;
 }
 
 .contact .form .btn:hover {
-    color: #FF9209;
-    background: #222222;
+    color: #F9D94A;
+    background: #1e1e1e;
 }
 
 
@@ -892,7 +969,8 @@ a:focus {
     position: relative;
     width: 100%;
     padding: 30px 30px 0 30px;
-    background: #19376D;
+    background: #1e1e1e;
+    font-size: 14px;
 }
 
 .footer .col-md-6:last-child {
@@ -907,16 +985,16 @@ a:focus {
 }
 
 .footer p {
-    color: #ffffff;
+    color: #cacaca;
     margin: 0;
 }
 
 .footer a {
-    color: #FF9209;
+    color: #F9D94A;
     font-weight: 600;
 }
 
 .footer a:hover {
-    color: #222222;
+    color: #ffffff;
 }
 
